@@ -1,4 +1,4 @@
-int dfs(int now)
+void dfs(int now)
 {
 	Visit[now] = 1;
 	for (int nxt : Gr[now])
