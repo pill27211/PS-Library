@@ -1,6 +1,3 @@
-#include<bits/stdc++.h>
-using namespace std;
-
 using pi = pair<int, int>;
 const int MAXN(1e5 + 3);
 
