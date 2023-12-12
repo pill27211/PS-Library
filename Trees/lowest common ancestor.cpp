@@ -1,4 +1,8 @@
-// LCAInit(root, 1)
+const int MAXN(1e5 + 3);
+
+vector <int> Gr[MAXN], dep(MAXN);
+int dp[MAXN][18];
+
 int LCAInit(int now, int depth)
 {
 	dep[now] = depth;
@@ -9,15 +13,6 @@ int LCAInit(int now, int depth)
 			LCAInit(nxt, depth + 1);
 		}
 }
-
-/*
-* N ≤ 100,000 -> j < 18
-* N ≤ 200,000 -> j < 19
-* N ≤ 500,000 -> j < 20
-* .
-* .
-* .
-*/
 void TableDP()
 {
 	for (int j(1); j < 18; j++)
