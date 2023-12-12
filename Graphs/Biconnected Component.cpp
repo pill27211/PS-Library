@@ -1,5 +1,5 @@
 using pi = pair<int, int>;
-const int MAXN(1e5 + 3)
+const int MAXN(1e5 + 3);
 
 vector <int> Gr[MAXN], in(MAXN);
 vector <vector<pi>> BCC;
