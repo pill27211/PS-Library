@@ -1,3 +1,10 @@
+const int MAXN(1e5 + 3);
+
+vector <int> Gr[MAXN], tree[MAXN];
+
+int par[MAXN], dep[MAXN], sz[MAXN];
+int top[MAXN], in[MAXN];
+
 void hldInit(int now)
 {
 	sz[now] = 1;
